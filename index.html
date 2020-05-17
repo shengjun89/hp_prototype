@@ -1,43 +1,510 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-
-	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-	<script type="text/javascript">
-		// This automatically sets the right viewport scale on mobile devices
-		(function () {
-			var scale = 1 / window.devicePixelRatio
-			var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no, viewport-fit=cover"
-			var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
-			if (iOS) { viewport += ", shrink-to-fit=no" }
-			document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
-		})()
-	</script>
-
-	<link rel="apple-touch-icon" href="framer/images/icon-120.png">
-	<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
-	<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
-	<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
-	<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
-	<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
-
-	<link rel="stylesheet" type="text/css" href="framer/style.css">
-
-	<script src="framer/coffee-script.js"></script>
-	<script src="framer/framer.js"></script>
-	<script src="framer/framer.generated.js"></script>
-	<script src="framer/framer.modules.js"></script>
-	<script src="framer/framer.vekter.js"></script>
-	<script src="framer/framer.init.js"></script>
-
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport"
+          content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi = medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="fonts/iconfont.css">
 </head>
-
 <body>
-</body>
+<div class="index-wrap">
+    <div class="header">
+        <div class="head-line1">
+            <div class="title">
+                首页
+            </div>
+            <div class="search-box">
+                <span class="iconfont icon-search"></span>
+                <input type="text" class="ipt-search" placeholder="搜索老师/课程">
+            </div>
+            <div class="message-btn">
+                <span class="iconfont iconlingdang1 new-msg"></span>
+            </div>
+        </div>
+        <div class="top-bar">
+            <ul class="nav-list">
+                <li class="cur">机电领域</li>
+                <li>开采掘进</li>
+                <li>地质测量</li>
+                <li>一通三防</li>
+                <li>洗选加工</li>
+            </ul>
+        </div>
+    </div>
+    <div class="conetnt">
+        <!--导航-->
 
+        <!--banner-->
+        <div class="banner">
+           <div class="carousel">
+               <ul>
+                   <li>
+                       <a href="#">
+                           <img src="./images/banne1.png" alt="">
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="./images/banne1.png" alt="">
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="./images/banne1.png" alt="">
+                       </a>
+                   </li>
+               </ul>
+               <ol class="sweiper-point points">
+               </ol>
+           </div>
+        </div>
+        <!--icon-功能区-->
+        <ul class="icon-zone-box">
+            <li class="icon-item">
+                <img src="./images/icon_1.png" alt="">
+                <span>大师风采</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_4.png" alt="">
+                <span>大师讲课</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_7.png" alt="">
+                <span>大师值班室</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_2.png" alt="">
+                <span>大师会诊室</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_6.png" alt="">
+                <span>学习园地</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_3.png" alt="">
+                <span>大师之家</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_5.png" alt="">
+                <span>交流大舞台</span>
+            </li>
+            <li class="icon-item">
+                <img src="./images/icon_8.png" alt="">
+                <span>更多功能</span>
+            </li>
+        </ul>
+        <!--公告通知-->
+        <div class="notice-box">
+            <div class="label-tit">公告通知</div>
+            <div class="label-desc">
+                今晚有导师公开课请定时参加，更有豪华的大课堂
+            </div>
+        </div>
+        <!--大师值班室-->
+        <div class="great-master-box">
+            <div class="great-master-header">
+                <div class="great-master-tit">
+                    大师值班室
+                </div>
+                <div class="great-master-date-desc">
+                    值班时间：<span>9:00-10:00</span>
+                </div>
+            </div>
+            <div class="great-master-content">
+                <ul>
+                    <li>
+                        <img src="./images/great-master-img1.png" alt="">
+                        <div class="great-master-name">李国豪</div>
+                        <div class="great-master-type">机电领域</div>
+                        <div class="btn on-line">在线</div>
+                    </li>
+                    <li>
+                        <img src="./images/great-master-img1.png" alt="">
+                        <div class="great-master-name">曹孟德</div>
+                        <div class="great-master-type">开采挖掘</div>
+                        <div class="btn on-line">在线</div>
+                    </li>
+                    <li>
+                        <img src="./images/great-master-img1.png" alt="">
+                        <div class="great-master-name">张小丽</div>
+                        <div class="great-master-type">地质测量</div>
+                        <div class="btn off-line">未在线</div>
+                    </li>
+                    <li>
+                        <img src="./images/great-master-img1.png" alt="">
+                        <div class="great-master-name">张小丽</div>
+                        <div class="great-master-type">地质测量</div>
+                        <div class="btn off-line">未在线</div>
+                    </li>
+                    <li>
+                        <img src="./images/great-master-img1.png" alt="">
+                        <div class="great-master-name">张小丽</div>
+                        <div class="great-master-type">地质测量</div>
+                        <div class="btn off-line">未在线</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--直播课程-->
+        <div class="live-box great-master-box">
+            <div class="live-header great-master-header">
+                <div class="live-tit great-master-tit">
+                    直播课程
+                </div>
+                <div class="live-more">
+                    更多
+                    <span class="iconfont icon-arrow-right"></span>
+                </div>
+            </div>
+            <ul class="live-content">
+                <li>
+                    <div class="live-left-date">19:00</div>
+                    <div class="live-right-desc">
+                        <div class="line1">
+                            <p class="type">机电领域</p>
+                            <p class="text">
+                                导师教你如何学习机电
+                            </p>
+                            <p class="tag">
+                                5节课
+                            </p>
+                        </div>
+                        <div class="line2">
+                            <img src="./images/great-master-img1.png" alt="">
+                            <p class="name">
+                                讲师：<span>李国豪</span>
+                            </p>
+                            <p>
+                                报名人数：<span>34</span>人
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="living">
+                    <div class="live-left-date">直播中</div>
+                    <div class="live-right-desc">
+                        <div class="line1">
+                            <p class="type">机电领域</p>
+                            <p class="text">
+                                导师教你如何学习机电
+                            </p>
+                            <p class="tag">
+                                5节课
+                            </p>
+                        </div>
+                        <div class="line2">
+                            <img src="./images/great-master-img1.png" alt="">
+                            <p class="name">
+                                讲师：<span>李国豪</span>
+                            </p>
+                            <p>
+                                报名人数：<span>34</span>人
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="live-left-date">19:00</div>
+                    <div class="live-right-desc">
+                        <div class="line1">
+                            <p class="type">机电领域</p>
+                            <p class="text">
+                                导师教你如何学习机电
+                            </p>
+                            <p class="tag">
+                                5节课
+                            </p>
+                        </div>
+                        <div class="line2">
+                            <img src="./images/great-master-img1.png" alt="">
+                            <p class="name">
+                                讲师：<span>李国豪</span>
+                            </p>
+                            <p>
+                                报名人数：<span>34</span>人
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="live-left-date">19:00</div>
+                    <div class="live-right-desc">
+                        <div class="line1">
+                            <p class="type">机电领域</p>
+                            <p class="text">
+                                导师教你如何学习机电
+                            </p>
+                            <p class="tag">
+                                5节课
+                            </p>
+                        </div>
+                        <div class="line2">
+                            <img src="./images/great-master-img1.png" alt="">
+                            <p class="name">
+                                讲师：<span>李国豪</span>
+                            </p>
+                            <p>
+                                报名人数：<span>34</span>人
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="live-left-date">19:00</div>
+                    <div class="live-right-desc">
+                        <div class="line1">
+                            <p class="type">机电领域</p>
+                            <p class="text">
+                                导师教你如何学习机电
+                            </p>
+                            <p class="tag">
+                                5节课
+                            </p>
+                        </div>
+                        <div class="line2">
+                            <img src="./images/great-master-img1.png" alt="">
+                            <p class="name">
+                                讲师：<span>李国豪</span>
+                            </p>
+                            <p>
+                                报名人数：<span>34</span>人
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="unfold-more">
+                展开更多 <span class="iconfont icon-arrow-down"></span>
+            </div>
+        </div>
+        <!--点播课程-->
+        <div class="great-master-box on-demand-box">
+            <div class="live-header great-master-header">
+                <div class="live-tit great-master-tit">
+                    点播课程
+                </div>
+                <div class="live-more">
+                    更多
+                    <span class="iconfont icon-arrow-right"></span>
+                </div>
+            </div>
+            <div class="on-demand-content">
+                <ul>
+                    <li class="item">
+                        <img src="./images/on-demand.png" alt="">
+                        <p class="on-demand-desc">
+                            掌握核心英语，出国做工程师才吃香
+                            掌握核心英语，出国做工程师才吃香
+                            掌握核心英语，出国做工程师才吃香
+                        </p>
+                        <p class="bot-con">
+                      <span class="num">
+                          <i>34</i>人已报名
+                      </span>
+                      <span class="price">
+                          <i>¥</i>30.00
+                      </span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <img src="./images/on-demand.png" alt="">
+                        <p class="on-demand-desc">
+                            掌握核心英语，出国做工程师才吃香
+                            掌握核心英语，出国做工程师才吃香
+                            掌握核心英语，出国做工程师才吃香
+                        </p>
+                        <p class="bot-con">
+                      <span class="num">
+                          <i>34</i>人已报名
+                      </span>
+                      <span class="price">
+                          <i>¥</i>30.00
+                      </span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <img src="./images/on-demand.png" alt="">
+                        <p class="on-demand-desc">
+                            掌握核心英语，出国做工程师才吃香
+                            掌握核心英语，出国做工程师才吃香
+                            掌握核心英语，出国做工程师才吃香
+                        </p>
+                        <p class="bot-con">
+                      <span class="num">
+                          <i>34</i>人已报名
+                      </span>
+                      <span class="price">
+                          <i>¥</i>30.00
+                      </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--热点解答-->
+        <div class="great-master-box hot-answer-box">
+            <div class="live-header great-master-header">
+                <div class="live-tit great-master-tit">
+                    热点解答
+                </div>
+                <div class="live-more">
+                    更多
+                    <span class="iconfont icon-arrow-right"></span>
+                </div>
+            </div>
+            <div class="hot-answer-content">
+                <ul>
+                    <li class="item">
+                        <p class="line1">
+                            <img src="./images/student.png" alt="">
+                            <span>学员名字</span>
+                        </p>
+                        <p class="desc">
+                            机电设备故障如何排除?请问有大神帮我解答一下吗？感激不尽感激不尽，谢谢！
+                        </p>
+                        <p class="btn-text">
+                            <span>20小时前提问</span>
+                            <span><i class="iconfont iconxinxi"></i>70808</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="line1">
+                            <img src="./images/student.png" alt="">
+                            <span>学员名字</span>
+                        </p>
+                        <p class="desc">
+                            机电设备故障如何排除?请问有大神帮我解答一下吗？感激不尽感激不尽，谢谢！
+                        </p>
+                        <p class="btn-text">
+                            <span>20小时前提问</span>
+                            <span><i class="iconfont iconxinxi"></i>70808</span>
+                        </p>
+                    </li>
+                    <li class="item">
+                        <p class="line1">
+                            <img src="./images/student.png" alt="">
+                            <span>学员名字</span>
+                        </p>
+                        <p class="desc">
+                            机电设备故障如何排除?请问有大神帮我解答一下吗？感激不尽感激不尽，谢谢！
+                        </p>
+                        <p class="btn-text">
+                            <span>20小时前提问</span>
+                            <span><i class="iconfont iconxinxi"></i>70808</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--推荐班级-->
+        <div class="great-master-box recommended-class-box">
+            <div class="live-header great-master-header">
+                <div class="live-tit great-master-tit">
+                    推荐班级
+                </div>
+                <div class="live-more">
+                    更多
+                    <span class="iconfont icon-arrow-right"></span>
+                </div>
+            </div>
+            <ul class="recommended-class-content">
+                <li>
+                    <img src="./images/class-img.png" alt="">
+                    <div class="right-con">
+                        <p class="line1">高级工种-地质测量进阶班教学</p>
+                        <p class="line2">
+                            <span>讲师：李国豪</span>
+                            <span>共有4门课程</span>
+                        </p>
+                        <div class="btn-con">
+                            <p>
+                                <span class="new-price">¥9.90</span>
+                                <span class="old-price">¥29.90</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <p class="btn-join">
+                        立即加入
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/class-img.png" alt="">
+                    <div class="right-con">
+                        <p class="line1">高级工种-地质测量进阶班教学</p>
+                        <p class="line2">
+                            <span>讲师：李国豪</span>
+                            <span>共有4门课程</span>
+                        </p>
+                        <div class="btn-con">
+                            <p>
+                                <span class="new-price">¥9.90</span>
+                                <span class="old-price">¥29.90</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <p class="btn-join">
+                        立即加入
+                    </p>
+                </li>
+                <li>
+                    <img src="./images/class-img.png" alt="">
+                    <div class="right-con">
+                        <p class="line1">高级工种-地质测量进阶班教学</p>
+                        <p class="line2">
+                            <span>讲师：李国豪</span>
+                            <span>共有4门课程</span>
+                        </p>
+                        <div class="btn-con">
+                            <p>
+                                <span class="new-price">¥9.90</span>
+                                <span class="old-price">¥29.90</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <p class="btn-join">
+                        立即加入
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="bottom-tab">
+            <li class="cur">
+                <p class="icon1 icon-com"></p>
+                <p class="text">首页</p>
+            </li>
+            <li>
+                <p class="icon2 icon-com"></p>
+                <p class="text">课程</p>
+            </li>
+            <li>
+                <p class="icon3 icon-com"></p>
+                <p class="text">发现</p>
+            </li>
+            <li>
+                <p class="icon4 icon-com"></p>
+                <p class="text">我的</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="./js/index.js"></script>
+</body>
 </html>

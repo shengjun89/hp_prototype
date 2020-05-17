@@ -1,0 +1,127 @@
+@charset "utf-8";
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+button,
+th,
+td,
+menu,
+article {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+select {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+button,
+label {
+  font-size: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img,
+fieldset,
+input[type="submit"] {
+  border: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button,
+input,
+textarea {
+  border: 0;
+  outline: none;
+  -webkit-appearance: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+input,
+textarea {
+  width: 100%;
+}
+input {
+  border-radius: 0;
+}
+textarea {
+  border-radius: 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+  resize: none;
+  height: auto;
+}
+/* 去除IE下拉菜单箭头 */
+select::-ms-expand {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  user-select: none;
+  font-family: Tahoma, Arial, "\5FAE\8F6F\96C5\9ED1", "\5b8b\4f53", sans-serif;
+}
+div,
+p {
+  word-break: break-all;
+}
